@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JUTE_EXPORTS - Redefining sustainable luxury. We transform raw jute into global masterpieces with unmatched craftsmanship. Leading the market since 2000.">
+    <meta name="keywords" content="Jute Exports, Sustainable Luxury, Jute Products, Eco-friendly, Jute Bags, Sylhet, Bangladesh">
+    <meta name="author" content="Farhana Khatun">
+    <title>JUTE_EXPORTS | Premium Sustainable Jute Solutions</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <style>
+       .reveal { opacity: 0;
+         transform: translateY(30px);
+         transition: all 0.8s ease-out; }
+        .active { opacity: 1; 
+        transform: translateY(0); }
+        .cursor-circle {
+            position: fixed;
+            top: 0; left: 0; width: 20px; height: 20px;
+            background-color: #C5A059;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.1s ease;
+        }
+    </style>
+</head>
+<body class="bg-[#FDFBF7] text-[#1A1A1A] font-sans">
+<!-- Navbar Wrapper -->
+
+<nav class="fixed top-0 left-0 w-full bg-blue-500 text-[#E9EDC9] px-6 py-4 flex items-center justify-between z-[60] shadow-md">
+    <!-- লোগো -->
+    <div class="text-xl font-bold text-[#D4A373]">JUTE_EXPORTS</div>
+    
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-8 font-medium">
+        <a href="index.html" class="hover:text-[#D4A373] transition duration-300">Home</a>
+        <a href="products.html" class="hover:text-[#D4A373] transition duration-300">Products</a>
+        <a href="quality.html" class="hover:text-[#D4A373] transition duration-300">Quality</a>
+        <a href="contact.html" class="hover:text-[#D4A373] transition duration-300">Contact</a>
+    </div>
+
+    <!-- Right Side -->
+    <div class="flex items-center space-x-4">
+        <button class="text-[#D4A373] hover:text-white transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </button>
+        <button id="menu-btn" class="md:hidden text-[#E9EDC9] focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+    </div>
+</nav>
+
+
+<div class="pt-20"></div>
+
+<!-- Mobile Menu Overlay -->
+
+<div id="mobile-menu" class="hidden fixed inset-0 bg-gray-500 z-[100] flex flex-col items-center justify-center space-y-8 text-2xl font-serif text-white">
+    
+    <!-- Close Button -->
+    <button id="close-btn" class="absolute top-6 right-8 text-white text-4xl hover:text-blue-900 transition">✕</button>
+    
+    <a href="index.html" class="hover:text-blue-900 transition">Home</a>
+    <a href="products.html" class="hover:text-blue-900 transition">Products</a>
+    <a href="quality.html" class="hover:text-blue-900 transition">Quality</a>
+    <a href="contact.html" class="hover:text-[#2D4034] transition">Contact</a>
+</div>
+<main class="pt-24 pb-20 px-8 bg-[#FDFBF7]">
+    <div class="max-w-6xl mx-auto">
+        <!-- Section 1: Header -->
+        <div class="text-center mb-20 reveal active">
+            <h1 class="text-5xl font-serif font-bold text-[#1A1A1A] mb-6">Discover the Art of Jute</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                JUTE_EXPORTS is more than just a company; it is a reflection of a sustainable future. Each of our products is a perfect blend of natural jute and modern craftsmanship.
+            </p>
+        </div>
+
+        <!-- 4-Column Grid Sections -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 reveal active delay-1">
+                <div class="w-12 h-12 bg-[#C5A059]/10 text-[#C5A059] flex items-center justify-center rounded-xl mb-6 font-bold text-xl">01</div>
+                <h3 class="text-xl font-bold mb-3">Our Mission</h3>
+                <p class="text-gray-600 text-sm">Promoting eco-friendly jute products worldwide while empowering local artisans.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 reveal active delay-2">
+                <div class="w-12 h-12 bg-blue-900/10 text-blue-900 flex items-center justify-center rounded-xl mb-6 font-bold text-xl">02</div>
+                <h3 class="text-xl font-bold mb-3">Sustainability</h3>
+                <p class="text-gray-600 text-sm">We ensure 100% biodegradable materials, protecting our planet for future generations.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 reveal active delay-3">
+                <div class="w-12 h-12 bg-[#C5A059]/10 text-[#C5A059] flex items-center justify-center rounded-xl mb-6 font-bold text-xl">03</div>
+                <h3 class="text-xl font-bold mb-3">Craftsmanship</h3>
+                <p class="text-gray-600 text-sm">Mastering traditional weaving techniques combined with modern design aesthetics.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 reveal active delay-4">
+                <div class="w-12 h-12 bg-blue-900/10 text-blue-900 flex items-center justify-center rounded-xl mb-6 font-bold text-xl">04</div>
+                <h3 class="text-xl font-bold mb-3">Our Promise</h3>
+                <p class="text-gray-600 text-sm">Never compromising on quality and durability; your satisfaction is our primary goal.</p>
+            </div>
+
+        </div>
+    </div>
+</main>
+<!-- Footer Section -->
+<footer class="bg-blue-950 text-white py-16 relative">
+  <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-12">
+    
+    <!-- About Section -->
+    <div class="col-span-1 md:col-span-1">
+      <h3 class="text-2xl font-bold mb-4 text-[#C5A059]">JUTE_EXPORTS</h3>
+      <p class="text-blue-200 text-sm">Leading the global market in sustainable jute solutions since 2000.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="font-bold mb-4 text-[#C5A059]">Quick Links</h3>
+      <ul class="space-y-2 text-blue-200">
+        <li><a href="index.html" class="hover:text-white">Home</a></li>
+        <li><a href="products.html" class="hover:text-white">Products</a></li>
+        <li><a href="quality.html" class="hover:text-white">Quality</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="font-bold mb-4 text-[#C5A059]">Contact Info</h3>
+      <p class="text-blue-200">Sylhet, Bangladesh</p>
+      <p class="text-blue-200">Email: contact@uptotechsyl.com</p>
+    </div>
+
+    <!-- Social Media Section -->
+<div>
+  <h3 class="font-bold mb-4 text-[#C5A059]">Follow Us</h3>
+  <div class="flex items-center space-x-3">
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-blue-900 rounded-full hover:bg-[#C5A059] transition text-sm font-bold">FB</a>
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-blue-900 rounded-full hover:bg-[#C5A059] transition text-sm font-bold">IG</a>
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-blue-900 rounded-full hover:bg-[#C5A059] transition text-sm font-bold">LI</a>
+  </div>
+</div>
+  </div>
+
+  <!-- WhatsApp Button (Floating) -->
+  <a href="https://wa.me/8801759945057" target="_blank" class="fixed bottom-8 left-8 z-[100] bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition">
+    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 2c-5.514 0-10 4.486-10 10 0 1.764.463 3.487 1.334 4.996l-1.334 4.887 5.013-1.316c1.472.8 3.125 1.222 4.787 1.222 5.515 0 10-4.486 10-10s-4.485-10-10-10zm0 18c-1.494 0-2.955-.393-4.228-1.134l-.304-.176-3.13.821.837-3.059-.204-.323c-.833-1.321-1.272-2.846-1.272-4.401 0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8zm4.333-5.753c-.237-.118-1.405-.694-1.622-.772-.218-.078-.376-.118-.535.118-.158.237-.614.772-.753.931-.139.158-.277.176-.514.058-.237-.118-1.002-.369-1.908-1.177-.704-.627-1.178-1.401-1.317-1.638-.139-.237-.015-.366.104-.485.107-.107.237-.277.356-.415.118-.139.158-.237.237-.395.078-.158.039-.296-.039-.415-.078-.118-.535-1.288-.733-1.763-.197-.475-.395-.415-.535-.415-.139 0-.297-.02-.455-.02-.158 0-.415.059-.633.297-.218.237-.833.814-.833 1.983 0 1.169 1.109 2.301 1.268 2.5.158.197 2.187 3.339 5.302 4.685.741.317 1.318.506 1.77.649.743.237 1.417.204 1.951.124.595-.088 1.846-.754 2.103-1.482.257-.729.257-1.354.178-1.482-.078-.118-.277-.197-.514-.315z"/></svg>
+  </a>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 z-[100] bg-[#C5A059] text-blue-900 p-4 rounded-full shadow-lg hover:scale-110 transition">
+    ↑
+  </button>
+</footer>
+<!-- ৬টি বৃত্ত তৈরি -->
+<div class="cursor-circle"></div>
+<div class="cursor-circle"></div>
+<div class="cursor-circle"></div>
+<div class="cursor-circle"></div>
+<div class="cursor-circle"></div>
+<div class="cursor-circle"></div>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('flex');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+    });
+  const circles = document.querySelectorAll('.cursor-circle');
+  let coords = { x: 0, y: 0 };
+
+  window.addEventListener('mousemove', (e) => {
+    coords.x = e.clientX;
+    coords.y = e.clientY;
+  });
+
+  function animateCircles() {
+    let x = coords.x;
+    let y = coords.y;
+
+    circles.forEach((circle, index) => {
+      circle.style.left = x - 10 + 'px';
+      circle.style.top = y - 10 + 'px';
+      
+      // ছোট-বড় এবং বিলম্বিত করার ইফেক্ট
+      circle.style.transform = `scale(${1 - index * 0.15})`;
+      
+      // বৃত্তগুলোকে একে অপরের পেছনে ঘোরানোর লজিক
+      coords.x += (x - coords.x) * 0.3;
+      coords.y += (y - coords.y) * 0.3;
+    });
+
+    requestAnimationFrame(animateCircles);
+  }
+
+  animateCircles();
+</script>
+</body>
+</html>

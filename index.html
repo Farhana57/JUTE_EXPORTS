@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JUTE_EXPORTS - Redefining sustainable luxury. We transform raw jute into global masterpieces with unmatched craftsmanship. Leading the market since 2000.">
+    <meta name="keywords" content="Jute Exports, Sustainable Luxury, Jute Products, Eco-friendly, Jute Bags, Sylhet, Bangladesh">
+    <meta name="author" content="Farhana Khatun">
+    <title>JUTE_EXPORTS | Premium Sustainable Jute Solutions</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+   <style>
+  .fade-in { 
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: all 0.8s ease-out; 
+  }
+  
+  /* এটিই মূল পরিবর্তন */
+  .fade-in.active { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+
+  /* আপনার আগের কাস্টম কার্সার কোড */
+  .cursor-circle {
+      position: fixed;
+      top: 0; left: 0; width: 20px; height: 20px;
+      background-color: #C5A059;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transition: transform 0.1s ease;
+  }
+</style>
+</head>
+<body class="bg-[#FDFBF7] text-[#1A1A1A] font-sans">
+<!-- Navbar Wrapper -->
+
+<nav class="fixed top-0 left-0 w-full bg-blue-500 text-[#E9EDC9] px-6 py-4 flex items-center justify-between z-[60] shadow-md">
+    <!-- লোগো -->
+    <div class="text-xl font-bold text-[#D4A373]">JUTE_EXPORTS</div>
+    
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-8 font-medium">
+        <a href="index.html" class="hover:text-[#D4A373] transition duration-300">Home</a>
+        <a href="products.html" class="hover:text-[#D4A373] transition duration-300">Products</a>
+        <a href="quality.html" class="hover:text-[#D4A373] transition duration-300">Quality</a>
+        <a href="contact.html" class="hover:text-[#D4A373] transition duration-300">Contact</a>
+    </div>
+
+    <!-- Right Side -->
+    <div class="flex items-center space-x-4">
+        <button class="text-[#D4A373] hover:text-white transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </button>
+        <button id="menu-btn" class="md:hidden text-[#E9EDC9] focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+    </div>
+</nav>
+
+
+<div class="pt-20"></div>
+
+<!-- Mobile Menu Overlay -->
+
+<div id="mobile-menu" class="hidden fixed inset-0 bg-gray-500 z-[100] flex flex-col items-center justify-center space-y-8 text-2xl font-serif text-white">
+    
+    <!-- Close Button -->
+    <button id="close-btn" class="absolute top-6 right-8 text-white text-4xl hover:text-blue-900 transition">✕</button>
+    
+    <a href="index.html" class="hover:text-amber-500 transition">Home</a>
+    <a href="products.html" class="hover:text-amber-500 transition">Products</a>
+    <a href="quality.html" class="hover:text-amber-500 transition">Quality</a>
+    <a href="contact.html" class="hover:text-amber-500 transition">Contact</a>
+</div>
+
+
+  <!-- Hero Section -->
+<section class="relative w-full min-h-screen bg-blue-900 overflow-hidden flex items-center pt-24 pb-12">
+  
+  <!-- ব্যাকগ্রাউন্ড গ্রেডিয়েন্ট -->
+  <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#C5A059]/20 to-transparent"></div>
+  
+  <div class="max-w-7xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center gap-12">
+    
+    <!-- Left: Content -->
+    <div class="w-full md:w-1/2">
+      <span class="text-[#C5A059] uppercase tracking-widest text-sm font-semibold mb-4 block">Premium Jute Solutions</span>
+      <h1 class="text-5xl md:text-8xl font-serif text-white leading-[0.9] mb-8">
+        Crafting <br> <span class="italic text-[#C5A059]">Excellence</span>
+      </h1>
+      <p class="text-blue-100 text-lg mb-10 max-w-md leading-relaxed">
+        Redefining sustainable luxury. We transform raw jute into global masterpieces with unmatched craftsmanship.
+      </p>
+      
+     <!-- Buttons -->
+<div class="flex flex-col sm:flex-row gap-4 mb-8">
+  <!-- Discover More Button -->
+  <a href="discover.html" class="bg-[#C5A059] text-blue-900 px-8 py-3 font-bold uppercase tracking-wide hover:bg-amber-300 transition duration-500 w-full sm:w-auto text-center">
+    Discover More
+  </a>
+  
+  <!-- Get Quote Button -->
+  <a href="quote.html" class="border border-white/30 text-white px-8 py-3 font-bold uppercase tracking-wide hover:border-[#C5A059] hover:text-[#C5A059] transition duration-500 w-full sm:w-auto text-center">
+    Get Quote
+  </a>
+</div>
+
+      <!-- Search Bar -->
+      <div class="bg-white p-1 rounded-full shadow-lg flex items-center w-full max-w-md border border-white/20">
+        <input type="text" placeholder="Search Jute Products..." class="w-full px-6 py-2 outline-none text-black bg-transparent">
+        <button class="bg-[#C5A059] text-white px-8 py-2 rounded-full font-bold hover:bg-black transition">
+          Explore
+        </button>
+      </div>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="w-full md:w-1/2">
+      <div class="relative group overflow-hidden rounded-lg border border-white/20 shadow-2xl">
+        <div class="absolute inset-0 bg-[#C5A059]/10 group-hover:bg-[#C5A059]/20 transition duration-700"></div>
+        <img 
+          src="https://images.unsplash.com/photo-1748169207012-6ed2f64aedf6?w=500&auto=format&fit=crop&q=60" 
+          alt="Premium Jute" 
+          class="w-full h-[300px] md:h-[500px] object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+   <section class="bg-[#C5A059] py-8 text-blue-900">
+  <div class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div><h3 class="text-3xl font-bold">25+</h3><p class="uppercase text-sm">Years Experience</p></div>
+    <div><h3 class="text-3xl font-bold">500+</h3><p class="uppercase text-sm">Happy Clients</p></div>
+    <div><h3 class="text-3xl font-bold">50+</h3><p class="uppercase text-sm">Countries Export</p></div>
+    <div><h3 class="text-3xl font-bold">99%</h3><p class="uppercase text-sm">Satisfaction</p></div>
+  </div>
+</section>
+   <section class="py-20 bg-blue-900 text-white relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-8 text-center">
+    <!-- টাইটেল -->
+    <h2 class="text-4xl md:text-5xl font-serif mb-20">Manufacturing <span class="text-[#C5A059]">Journey</span></h2>
+    
+    <!-- স্টেপ কন্টেইনার -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+      
+      <!-- ধাপ ১: Raw Jute -->
+      <div class="group flex flex-col items-center">
+        <div class="relative w-24 h-24 bg-blue-800 border-2 border-[#C5A059] rounded-full flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 group-hover:bg-[#C5A059]">
+          <span class="text-3xl">🌿</span> 
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Raw Jute</h3>
+        <p class="text-blue-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Sourcing the finest natural fibers.</p>
+      </div>
+
+      <!-- লাইন কানেক্টর (শুধু ডেস্কটপের জন্য) -->
+      <div class="hidden md:block absolute top-12 left-1/3 w-1/3 h-0.5 bg-[#C5A059]/30"></div>
+
+      <!-- ধাপ ২: Spinning -->
+      <div class="group flex flex-col items-center">
+        <div class="relative w-24 h-24 bg-blue-800 border-2 border-[#C5A059] rounded-full flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 group-hover:bg-[#C5A059]">
+          <span class="text-3xl">🧶</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Spinning</h3>
+        <p class="text-blue-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Precision spinning for strength.</p>
+      </div>
+
+      <!-- ধাপ ৩: Weaving -->
+      <div class="group flex flex-col items-center">
+        <div class="relative w-24 h-24 bg-blue-800 border-2 border-[#C5A059] rounded-full flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 group-hover:bg-[#C5A059]">
+          <span class="text-3xl">🧵</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Weaving</h3>
+        <p class="text-blue-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Expertly woven into quality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-20 bg-[#FDFBF7]">
+  <div class="max-w-7xl mx-auto px-8">
+    <h2 class="text-4xl font-serif text-center mb-16 text-[#1A1A1A]">Featured Products</h2>
+    
+    <!-- Grid Container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="group relative overflow-hidden bg-white shadow-lg rounded-2xl cursor-pointer">
+        <div class="h-72 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1527385352018-3c26dd6c3916?w=500&auto=format&fit=crop&q=60" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="absolute inset-0 bg-[#C5A059]/0 group-hover:bg-[#C5A059]/20 transition-all duration-500"></div>
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-lg group-hover:text-[#C5A059] transition-colors">Jute Tote Bag</h3>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group relative overflow-hidden bg-white shadow-lg rounded-2xl cursor-pointer">
+        <div class="h-72 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=500&auto=format&fit=crop&q=60" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="absolute inset-0 bg-[#C5A059]/0 group-hover:bg-[#C5A059]/20 transition-all duration-500"></div>
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-lg group-hover:text-[#C5A059] transition-colors">Artisanal Mat</h3>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group relative overflow-hidden bg-white shadow-lg rounded-2xl cursor-pointer">
+        <div class="h-72 overflow-hidden">
+          <img src="https://plus.unsplash.com/premium_photo-1670044659304-644b17897a52?w=500&auto=format&fit=crop&q=60" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="absolute inset-0 bg-[#C5A059]/0 group-hover:bg-[#C5A059]/20 transition-all duration-500"></div>
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-lg group-hover:text-[#C5A059] transition-colors">Jute Rope</h3>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="group relative overflow-hidden bg-white shadow-lg rounded-2xl cursor-pointer">
+        <div class="h-72 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?w=500&auto=format&fit=crop&q=60" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="absolute inset-0 bg-[#C5A059]/0 group-hover:bg-[#C5A059]/20 transition-all duration-500"></div>
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-lg group-hover:text-[#C5A059] transition-colors">Gift Basket</h3>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="group relative overflow-hidden bg-white shadow-lg rounded-2xl cursor-pointer">
+        <div class="h-72 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&auto=format&fit=crop&q=60" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="absolute inset-0 bg-[#C5A059]/0 group-hover:bg-[#C5A059]/20 transition-all duration-500"></div>
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-lg group-hover:text-[#C5A059] transition-colors">Home Decor</h3>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="group relative overflow-hidden bg-white shadow-lg rounded-2xl cursor-pointer">
+        <div class="h-72 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1544523830-2bef1d330b7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8SnV0ZSUyMGZpbGUlMjBmb2xkZXJ8ZW58MHx8MHx8fDA%3D" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="absolute inset-0 bg-[#C5A059]/0 group-hover:bg-[#C5A059]/20 transition-all duration-500"></div>
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-lg group-hover:text-[#C5A059] transition-colors">Jute File Folder</h3>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="group relative overflow-hidden bg-white shadow-lg rounded-2xl cursor-pointer">
+        <div class="h-72 overflow-hidden">
+          <img src="https://media.istockphoto.com/id/1328370891/photo/handmade-macrame-100-cotton-wall-decoration-with-wooden-stick-hanging-on-a-white-wall-modern.webp?a=1&b=1&s=612x612&w=0&k=20&c=MxueEFTo-g7l8oIsW8HKq2fCEn5ttz_YMJ2Ofstc2M4=" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="absolute inset-0 bg-[#C5A059]/0 group-hover:bg-[#C5A059]/20 transition-all duration-500"></div>
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-lg group-hover:text-[#C5A059] transition-colors">Wall Hanging</h3>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="group relative overflow-hidden bg-white shadow-lg rounded-2xl cursor-pointer">
+        <div class="h-72 overflow-hidden">
+          <img src="https://plus.unsplash.com/premium_photo-1664300998837-ca31b3ae46df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEp1dGUlMjBlY28lMjBzYWNrfGVufDB8fDB8fHww" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="absolute inset-0 bg-[#C5A059]/0 group-hover:bg-[#C5A059]/20 transition-all duration-500"></div>
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-lg group-hover:text-[#C5A059] transition-colors">Eco-Sack</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="py-24 bg-[#FDFBF7]">
+  <div class="max-w-7xl mx-auto px-8">
+    <h2 class="text-4xl font-serif font-bold text-center mb-16 text-[#1A1A1A]">Why Choose Us?</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="group p-10 bg-white rounded-3xl shadow-lg border border-gray-100 text-center transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl">
+        <div class="text-5xl mb-6 transition-transform duration-500 group-hover:scale-110">⭐</div>
+        <h3 class="text-2xl font-bold mb-3 text-[#1A1A1A]">Premium Quality</h3>
+        <p class="text-gray-600 leading-relaxed">Finest raw materials sourced locally, ensuring sustainability and durability in every product.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group p-10 bg-white rounded-3xl shadow-lg border border-gray-100 text-center transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl">
+        <div class="text-5xl mb-6 transition-transform duration-500 group-hover:scale-110">🚚</div>
+        <h3 class="text-2xl font-bold mb-3 text-[#1A1A1A]">Global Shipping</h3>
+        <p class="text-gray-600 leading-relaxed">Reliable and safe delivery to 50+ countries worldwide with real-time tracking support.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group p-10 bg-white rounded-3xl shadow-lg border border-gray-100 text-center transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl">
+        <div class="text-5xl mb-6 transition-transform duration-500 group-hover:scale-110">💰</div>
+        <h3 class="text-2xl font-bold mb-3 text-[#1A1A1A]">Best Pricing</h3>
+        <p class="text-gray-600 leading-relaxed">We offer highly competitive wholesale rates specifically designed for bulk international exports.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+    
+    <!-- Left Content -->
+    <div>
+      <h2 class="text-4xl font-serif mb-6 text-blue-900">Quality & <span class="text-[#C5A059]">Sustainability</span></h2>
+      <p class="text-gray-600 text-lg leading-relaxed mb-6">
+        We ensure strict quality control from raw material to the final product. Our commitment to sustainability drives us to maintain global eco-friendly standards in every step of our manufacturing process.
+      </p>
+      <a href="standards.html" class="inline-block text-[#C5A059] font-bold border-b-2 border-[#C5A059] hover:text-blue-900 transition">
+    Learn More About Our Standards →
+</a>
+    </div>
+
+    <!-- Right Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition duration-500 bg-gray-50/50 text-center">
+        <div class="text-4xl mb-4">🏆</div>
+        <h3 class="font-bold text-blue-900">ISO Certified</h3>
+        <p class="text-gray-500 text-sm mt-2">Adhering to global quality benchmarks.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition duration-500 bg-gray-50/50 text-center">
+        <div class="text-4xl mb-4">🌿</div>
+        <h3 class="font-bold text-blue-900">Eco Friendly</h3>
+        <p class="text-gray-500 text-sm mt-2">100% natural and biodegradable products.</p>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition duration-500 bg-gray-50/50 text-center">
+        <div class="text-4xl mb-4">🛡️</div>
+        <h3 class="font-bold text-blue-900">Quality Control</h3>
+        <p class="text-gray-500 text-sm mt-2">Rigorous checks at every production stage.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition duration-500 bg-gray-50/50 text-center">
+        <div class="text-4xl mb-4">♻️</div>
+        <h3 class="font-bold text-blue-900">Zero Waste</h3>
+        <p class="text-gray-500 text-sm mt-2">Optimizing resources for a green future.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-8">
+    <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="italic text-gray-600 border-l-4 border-[#C5A059] pl-6">
+        "Jute_Exports provided the best quality jute mats for our retail chain. Highly recommended!"
+        <p class="font-bold mt-4 text-blue-900">- John Doe, London</p>
+      </div>
+      <div class="italic text-gray-600 border-l-4 border-[#C5A059] pl-6">
+        "Excellent craftsmanship and timely delivery. Reliable partner for our business."
+        <p class="font-bold mt-4 text-blue-900">- Sarah Smith, Berlin</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Clients / Partners Section -->
+   <section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-8">
+    <h4 class="text-center text-gray-400 uppercase tracking-[0.2em] mb-12 text-sm font-semibold">Our Global Partners</h4>
+    
+    <!-- লোগো কন্টেইনার -->
+   <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-60 hover:opacity-100 transition duration-500 grayscale hover:grayscale-0">
+  
+ 
+  <!-- Target  -->
+<img src="https://cdn.worldvectorlogo.com/logos/target-corporation.svg" alt="Target" class="h-8 md:h-10 w-auto object-contain">
+  <!-- Tesco -->
+  <img src="Tesco_Logo.svg" alt="Tesco" class="h-8 md:h-10 w-auto object-contain">
+  
+  <!-- Amazon -->
+  <img src="Amazon_logo.svg" alt="Amazon" class="h-8 md:h-10 w-auto object-contain">
+  
+  <!-- Costco -->
+  <img src="Costco_Wholesale_logo_2010-10-26.svg.webp" alt="Costco" class="h-8 md:h-10 w-auto object-contain">
+  
+  <!-- Carrefour -->
+  <img src="Logo_Carrefour.svg" alt="Carrefour" class="h-8 md:h-10 w-auto object-contain">
+
+</div>
+  </div>
+</section>
+  <section class="py-16 bg-[#C5A059] text-center">
+  <h2 class="text-3xl font-bold text-blue-900 mb-4">Ready to Discuss Your Project?</h2>
+  <p class="text-blue-950 mb-8">We provide customized jute solutions for global businesses.</p>
+  <button class="bg-blue-900 text-white px-8 py-3 rounded hover:bg-black transition">Request a Free Quote</button>
+</section>
+<!-- Stay Updated Section -->
+<section class="py-16 bg-blue-900 text-white text-center">
+    <h2 class="text-2xl font-bold mb-4">Stay Updated</h2>
+    <p class="mb-6 opacity-90">Subscribe to get the latest updates on our products.</p>
+    <div class="max-w-md mx-auto flex gap-2 px-4">
+        <input type="email" placeholder="Enter your email" class="w-full p-3 rounded-lg text-black outline-none focus:ring-2 focus:ring-[#C5A059]">
+        <button class="bg-[#C5A059] px-6 py-3 rounded-lg font-bold hover:bg-black transition-all">Join</button>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-24 bg-[#FDFBF7] fade-in" id="contact">
+    <div class="max-w-7xl mx-auto px-8">
+        
+        <!-- Form Header -->
+        <div class="mb-16 text-center">
+            <h2 class="text-4xl font-serif font-bold text-[#1A1A1A] mb-4">Let's Work Together</h2>
+            <div class="w-20 h-1.5 bg-[#C5A059] mx-auto rounded-full mb-6"></div>
+            <p class="text-gray-600 max-w-lg mx-auto">
+                Have a project in mind or need assistance with our sustainable jute products? We'd love to hear from you.
+            </p>
+        </div>
+
+        <!-- Grid Layout -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Contact Form -->
+            <div class="bg-white p-10 rounded-3xl shadow-2xl border border-gray-100 hover:shadow-3xl transition-shadow duration-500">
+                <h2 class="text-3xl font-bold mb-6 text-[#1A1A1A]">Send us a Message</h2>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-gray-700">Name</label>
+                        <input type="text" placeholder="Your Name" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-[#C5A059] outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-gray-700">Email</label>
+                        <input type="email" placeholder="Your Email" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-[#C5A059] outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-gray-700">Message</label>
+                        <textarea rows="4" placeholder="Your Message" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-[#C5A059] outline-none transition-all"></textarea>
+                    </div>
+                    <button class="w-full bg-[#C5A059] text-white py-4 rounded-xl font-bold hover:bg-black transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Google Map -->
+            <div class="h-[500px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white hover:scale-[1.02] transition-transform duration-500">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.664426549247!2d91.86877967520428!3d24.899849277903887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3751ab2a714a6e87%3A0x63339ed3462f483b!2sSylhet!5e0!3m2!1sen!2sbd!4v1720793000000!5m2!1sen!2sbd" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-blue-950 text-white py-16 relative">
+  <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-12">
+    
+    <!-- About Section -->
+    <div class="col-span-1 md:col-span-1">
+      <h3 class="text-2xl font-bold mb-4 text-[#C5A059]">JUTE_EXPORTS</h3>
+      <p class="text-blue-200 text-sm">Leading the global market in sustainable jute solutions since 2000.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="font-bold mb-4 text-[#C5A059]">Quick Links</h3>
+      <ul class="space-y-2 text-blue-200">
+        <li><a href="index.html" class="hover:text-white">Home</a></li>
+        <li><a href="products.html" class="hover:text-white">Products</a></li>
+        <li><a href="quality.html" class="hover:text-white">Quality</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="font-bold mb-4 text-[#C5A059]">Contact Info</h3>
+      <p class="text-blue-200">Sylhet, Bangladesh</p>
+      <p class="text-blue-200">Email: contact@uptotechsyl.com</p>
+    </div>
+
+    <!-- Social Media Section -->
+<div>
+  <h3 class="font-bold mb-4 text-[#C5A059]">Follow Us</h3>
+  <div class="flex items-center space-x-3">
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-blue-900 rounded-full hover:bg-[#C5A059] transition text-sm font-bold">FB</a>
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-blue-900 rounded-full hover:bg-[#C5A059] transition text-sm font-bold">IG</a>
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-blue-900 rounded-full hover:bg-[#C5A059] transition text-sm font-bold">LI</a>
+  </div>
+</div>
+  </div>
+
+  <!-- WhatsApp Button (Floating) -->
+  <a href="https://wa.me/8801759945057" target="_blank" class="fixed bottom-8 left-8 z-[100] bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition">
+    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 2c-5.514 0-10 4.486-10 10 0 1.764.463 3.487 1.334 4.996l-1.334 4.887 5.013-1.316c1.472.8 3.125 1.222 4.787 1.222 5.515 0 10-4.486 10-10s-4.485-10-10-10zm0 18c-1.494 0-2.955-.393-4.228-1.134l-.304-.176-3.13.821.837-3.059-.204-.323c-.833-1.321-1.272-2.846-1.272-4.401 0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8zm4.333-5.753c-.237-.118-1.405-.694-1.622-.772-.218-.078-.376-.118-.535.118-.158.237-.614.772-.753.931-.139.158-.277.176-.514.058-.237-.118-1.002-.369-1.908-1.177-.704-.627-1.178-1.401-1.317-1.638-.139-.237-.015-.366.104-.485.107-.107.237-.277.356-.415.118-.139.158-.237.237-.395.078-.158.039-.296-.039-.415-.078-.118-.535-1.288-.733-1.763-.197-.475-.395-.415-.535-.415-.139 0-.297-.02-.455-.02-.158 0-.415.059-.633.297-.218.237-.833.814-.833 1.983 0 1.169 1.109 2.301 1.268 2.5.158.197 2.187 3.339 5.302 4.685.741.317 1.318.506 1.77.649.743.237 1.417.204 1.951.124.595-.088 1.846-.754 2.103-1.482.257-.729.257-1.354.178-1.482-.078-.118-.277-.197-.514-.315z"/></svg>
+  </a>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 z-[100] bg-[#C5A059] text-blue-900 p-4 rounded-full shadow-lg hover:scale-110 transition">
+    ↑
+  </button>
+</footer>
+<!-- ৬টি বৃত্ত তৈরি -->
+<div class="cursor-circle"></div>
+<div class="cursor-circle"></div>
+<div class="cursor-circle"></div>
+<div class="cursor-circle"></div>
+<div class="cursor-circle"></div>
+<div class="cursor-circle"></div>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('flex');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+    });
+  const circles = document.querySelectorAll('.cursor-circle');
+  let coords = { x: 0, y: 0 };
+
+  window.addEventListener('mousemove', (e) => {
+    coords.x = e.clientX;
+    coords.y = e.clientY;
+  });
+
+  function animateCircles() {
+    let x = coords.x;
+    let y = coords.y;
+
+    circles.forEach((circle, index) => {
+      circle.style.left = x - 10 + 'px';
+      circle.style.top = y - 10 + 'px';
+      
+      // ছোট-বড় এবং বিলম্বিত করার ইফেক্ট
+      circle.style.transform = `scale(${1 - index * 0.15})`;
+      
+      
+      coords.x += (x - coords.x) * 0.3;
+      coords.y += (y - coords.y) * 0.3;
+    });
+
+    requestAnimationFrame(animateCircles);
+  }
+
+  animateCircles();
+   const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  });
+
+ 
+  document.querySelectorAll('.fade-in').forEach((el) => {
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
