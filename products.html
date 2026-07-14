@@ -25,20 +25,39 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  /* ফিল্টার লজিক */
-    #all:checked ~ #product-grid .product-card,
-    #bags:checked ~ #product-grid .product-card[data-category="bags"],
-    #decor:checked ~ #product-grid .product-card[data-category="decor"],
-    #corporate:checked ~ #product-grid .product-card[data-category="corporate"] {
-        display: block;
+        /* ফিল্টার লজিক */
+
+#product-grid .product-card {
+    display: none;
+}
+
+/* ক্যাটাগরি অনুযায়ী কার্ড দেখানো */
+#all:checked ~ #product-grid .product-card,
+#bags:checked ~ #product-grid .product-card[data-category="bags"],
+#decor:checked ~ #product-grid .product-card[data-category="decor"],
+#corporate:checked ~ #product-grid .product-card[data-category="corporate"] {
+    display: block;
+}
+
+/* রেসপন্সিভ লেআউট (মোবাইল ও ডেস্কটপ) */
+#product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    #product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
-    #bags:checked ~ #product-grid .product-card:not([data-category="bags"]),
-    #decor:checked ~ #product-grid .product-card:not([data-category="decor"]),
-    #corporate:checked ~ #product-grid .product-card:not([data-category="corporate"]) {
-        display: none;
+    .product-card {
+        width: 100%; /* মোবাইলে কার্ডগুলো পুরো চওড়া দেখাবে */
     }
-
+}
         .cursor-circle {
             position: fixed;
             top: 0; left: 0; width: 20px; height: 20px;
