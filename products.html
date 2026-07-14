@@ -106,13 +106,13 @@
         <input type="radio" name="filter" id="decor" class="hidden">
         <input type="radio" name="filter" id="corporate" class="hidden">
 
-        <div class="flex flex-wrap justify-center gap-3 mb-8 px-2">
-    <label for="all" class="cursor-pointer px-4 py-2 text-sm md:text-base rounded-full border border-gray-300 hover:border-[#C5A059] transition peer-checked:bg-[#C5A059] peer-checked:text-white font-bold whitespace-nowrap">All Products</label>
-    <label for="bags" class="cursor-pointer px-4 py-2 text-sm md:text-base rounded-full border border-gray-300 hover:border-[#C5A059] transition peer-checked:bg-[#C5A059] peer-checked:text-white font-bold whitespace-nowrap">Bags</label>
-    <label for="decor" class="cursor-pointer px-4 py-2 text-sm md:text-base rounded-full border border-gray-300 hover:border-[#C5A059] transition peer-checked:bg-[#C5A059] peer-checked:text-white font-bold whitespace-nowrap">Home Decor</label>
-    <label for="corporate" class="cursor-pointer px-4 py-2 text-sm md:text-base rounded-full border border-gray-300 hover:border-[#C5A059] transition peer-checked:bg-[#C5A059] peer-checked:text-white font-bold whitespace-nowrap">Corporate</label>
-</div>
-
+       <div class="flex overflow-x-auto gap-2 px-4 pb-4 justify-start sm:justify-center">
+    <!-- প্রতিটি বাটনে flex-shrink-0 যোগ করুন -->
+    <label for="all" class="flex-shrink-0 cursor-pointer px-5 py-2 rounded-full border border-gray-300 hover:border-[#C5A059] transition text-sm font-bold whitespace-nowrap">All Products</label>
+    <label for="bags" class="flex-shrink-0 cursor-pointer px-5 py-2 rounded-full border border-gray-300 hover:border-[#C5A059] transition text-sm font-bold whitespace-nowrap">Bags</label>
+    <label for="decor" class="flex-shrink-0 cursor-pointer px-5 py-2 rounded-full border border-gray-300 hover:border-[#C5A059] transition text-sm font-bold whitespace-nowrap">Home Decor</label>
+    <label for="corporate" class="flex-shrink-0 cursor-pointer px-5 py-2 rounded-full border border-gray-300 hover:border-[#C5A059] transition text-sm font-bold whitespace-nowrap">Corporate</label>
+     </div>
         <!-- Product Grid -->
         <div id="product-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
             
