@@ -14,60 +14,64 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     
     <style>
-       
-  .animate-fade-up {
-    animation: fadeUp 0.8s ease-out forwards;
-    opacity: 0;
-  }
+    .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+        opacity: 0;
+    }
 
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
 
-        /* ফিল্টার লজিক */
+    /* ফিল্টার লজিক - বাটন গুলোর জন্য */
+    /* নিশ্চিত করুন যে ইনপুটগুলো সিলেক্টেড কি না */
+    #all:checked ~ #product-grid .product-card,
+    #bags:checked ~ #product-grid .product-card[data-category="bags"],
+    #decor:checked ~ #product-grid .product-card[data-category="decor"],
+    #corporate:checked ~ #product-grid .product-card[data-category="corporate"] {
+        display: block !important;
+    }
 
-#product-grid .product-card {
-    display: none;
-}
+    /* কার্ড লুকানোর লজিক */
+    #all:not(:checked) ~ #product-grid .product-card,
+    #bags:not(:checked) ~ #product-grid .product-card:not([data-category="bags"]),
+    #decor:not(:checked) ~ #product-grid .product-card:not([data-category="decor"]),
+    #corporate:not(:checked) ~ #product-grid .product-card:not([data-category="corporate"]) {
+        display: none;
+    }
 
-/* ক্যাটাগরি অনুযায়ী কার্ড দেখানো */
-#all:checked ~ #product-grid .product-card,
-#bags:checked ~ #product-grid .product-card[data-category="bags"],
-#decor:checked ~ #product-grid .product-card[data-category="decor"],
-#corporate:checked ~ #product-grid .product-card[data-category="corporate"] {
-    display: block;
-}
-
-/* রেসপন্সিভ লেআউট (মোবাইল ও ডেস্কটপ) */
-#product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-}
-
-@media (max-width: 768px) {
+    /* গ্রিড লেআউট */
     #product-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
     }
-    
-    .product-card {
-        width: 100%; /* মোবাইলে কার্ডগুলো পুরো চওড়া দেখাবে */
-    }
-}
-        .cursor-circle {
-            position: fixed;
-            top: 0; left: 0; width: 20px; height: 20px;
-            background-color: #C5A059;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-            transition: transform 0.1s ease;
+
+    /* মোবাইলের জন্য বাটন ও কার্ড ফিক্স */
+    @media (max-width: 768px) {
+        #product-grid {
+            display: flex;
+            flex-direction: column; /* মোবাইলে কার্ডগুলো লম্বালম্বি হবে */
+            align-items: center;
         }
-    </style>
+        
+        .product-card {
+            width: 90% !important; /* স্ক্রিনের সামান্য জায়গা খালি থাকবে, দেখতে সুন্দর লাগবে */
+        }
+    }
+
+    .cursor-circle {
+        position: fixed;
+        top: 0; left: 0; width: 20px; height: 20px;
+        background-color: #C5A059;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transition: transform 0.1s ease;
+    }
+</style>
 </head>
 <body class="bg-[#FDFBF7] text-[#1A1A1A] font-sans">
 <!-- Navbar Wrapper -->
